@@ -17,6 +17,7 @@ Upgrades version of bash found in $PATH with 4.3.27(1)-release which is the last
 * build tools  
 * gpg  
 * tar  
+* sudo access  
 
 ## Using fabric script  
 
