@@ -34,7 +34,7 @@ def bashup():
         run('wget https://gist.githubusercontent.com/sgviking/7bb38938187e36308175/raw/a52b04a8a95af1b0251f866e068e1bdc0105bd2f/bashup_manual.sh')
         run('chmod +x bashup_manual.sh')
         sudo('export shasum=$(sha1sum bashup_manual.sh | cut -d" " -f1); if [[ "$shasum" == "eb0a7bacea4fbae22c7d850b6b27433048dcbeb0" ]]; then ./bashup_manual.sh; fi')
-        sudo('rm -rf bash*')
+        sudo('rm -rf bash-src; rm bashup_manual.sh')
     except:
         print('Could not connect and/or run bashup on this host.\n')
 
