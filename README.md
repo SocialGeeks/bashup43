@@ -19,6 +19,10 @@ Upgrades version of bash found in $PATH with 4.3.27(1)-release which is the last
 * tar  
 * sudo access  
 
+### SELinux Warning  
+
+I hacked in quick support for SELinux systems into the above upgrade shell script.  Being far from an SELinux expert you should double check my work if you are running systems with SELinux enabled. Previously the upgrade script, when ran on a SELinux enabled system, would lock you out because of the change to bash.  The new script turns off SELinux, installs bash, reapplies the proper context label and turns on SELinux.   
+
 ## Using fabric script  
 
 The fabric script (fabfile.py) includes two functions: version and bashup  
