@@ -25,7 +25,7 @@ The fabric script (fabfile.py) includes two functions: version and bashup
 
 ### Setting up python virtual environment  
 
-	git clone https://github.com/sgviking/bashup43.git  
+	git clone https://github.com/SocialGeeks/bashup43.git  
 	cd bashup43/  
 	virtualenv -p python2 .  
 	source bin/activate  
