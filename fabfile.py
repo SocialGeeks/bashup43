@@ -30,9 +30,9 @@ def version():
 
 def bashup():
     try:
-        run('wget https://gist.githubusercontent.com/sgviking/7bb38938187e36308175/raw/0d1ac00d288f1b1d4c11dc2eda964b59a82d96cd/bashup_manual.sh')
+        run('wget https://gist.githubusercontent.com/sgviking/7bb38938187e36308175/raw/a52b04a8a95af1b0251f866e068e1bdc0105bd2f/bashup_manual.sh')
         run('chmod +x bashup_manual.sh')
-        sudo('export shasum=$(sha1sum bashup_manual.sh | cut -d" " -f1); if [[ "$shasum" == "6cb8602505a1e0b3dcffd99c643bf46a46604c9f" ]]; then ./bashup_manual.sh; fi')
+        sudo('export shasum=$(sha1sum bashup_manual.sh | cut -d" " -f1); if [[ "$shasum" == "eb0a7bacea4fbae22c7d850b6b27433048dcbeb0" ]]; then ./bashup_manual.sh; fi')
         sudo('rm -rf bash*')
     except:
         print('Could not connect and/or run bashup on this host.\n')
