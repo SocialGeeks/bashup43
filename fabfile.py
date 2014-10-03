@@ -11,14 +11,15 @@ env.output_prefix = False
 env.warn_only = True
 #env.abort_on_prompts = True
 
+# Change this to your server/hosts
 env.roledefs = {
     'public': [
-        '',
-        ''
+        '256.123.45.6',
+        '257.3.12.42'
     ],
     'internal1': [
-        '',
-        ''
+        '192.168.42.13',
+        '10.0.42.19'
     ]
 }
 
